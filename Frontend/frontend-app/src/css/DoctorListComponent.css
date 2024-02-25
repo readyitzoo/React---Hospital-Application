@@ -1,0 +1,20 @@
+.DoctorListComponentWrapper{
+    margin-top: 5%;
+}
+
+.DoctorCardWrapper{
+    background-color: rgb(81,97,206);
+    width: 40%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.DoctorCardWrapper div{
+    background-color: lightblue;
+    padding-bottom: 5px;
+    width: 80%;
+    margin: auto;
+    
+}

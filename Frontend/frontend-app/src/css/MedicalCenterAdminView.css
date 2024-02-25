@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,900|Montserrat|Roboto");
+
+body {
+    background: linear-gradient(to right, #3FB6A8, #7ED386);
+}
+
+.container {
+    background: #FFFFFF;
+    width: 540px;
+    height: 440px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10%;
+    box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
+}
+
+.leftbox {
+    float: left;
+    top: -5%;
+    left: 5%;
+    position: absolute;
+    width: 15%;
+    height: 110%;
+    background: #7ED386;
+    box-shadow: 3px 3px 10px rgba(119, 119, 119, 0.5);
+}
+
+nav a {
+    list-style: none;
+    padding: 35px;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #3FB6A8;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.active {
+    color: #3FB6A8;
+}
+
+.rightbox {
+    float: right;
+    width: 60%;
+    height: 100%;
+}
+
+.profile {
+    transition: opacity 0.5s ease-in;
+    position: absolute;
+    width: 70%;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #7ED386;
+    font-size: 1em;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: #777777;
+    font-family: "Roboto", sans-serif;
+    width: 80%;
+    text-transform: uppercase;
+    font-size: 8px;
+    letter-spacing: 1px;
+    margin-left: 2px;
+}
+
+p {
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #3FB6A8, rgba(126, 211, 134, 0.5)) 1 0%;
+    border-top: 0;
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7em;
+    padding: 7px 0;
+    color: #070707;
+}
+
+.btn {
+    float: right;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    border: none;
+    color: #3FB6A8;
+}
+
+.btn:hover {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.noshow {
+    opacity: 0;
+}
+table {
+    width: 100%; /* Tabelul să ocupe întreaga lățime a containerului */
+    border-collapse: collapse; /* Elimină spațiile între celule */
+    font-family: 'Nunito', sans-serif; /* Consistență cu fonturile tale */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Adaugă o umbră ușoară pentru efect 3D */
+    margin-bottom: 20px; /* Spațiu sub tabel */
+}
+
+th {
+    background-color: #3FB6A8; /* Culoare de fundal pentru header-uri, similară cu schema ta de culori */
+    color: white; /* Text alb pentru contrast */
+    text-transform: uppercase; /* Pentru un aspect mai profesional */
+    font-weight: 900; /* Bold, pentru a se potrivi cu stilul butoanelor */
+    padding: 10px; /* Spațiere confortabilă */
+}
+
+td {
+    background-color: #FFFFFF; /* Fundal alb pentru celule */
+    color: #070707; /* Culoare text standard */
+    padding: 8px; /* Spațiere în celule */
+    text-align: left; /* Aliniere la stânga pentru text */
+    border-top: 1px solid #7ED386; /* O linie subțire pentru a separa rândurile */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Un gri foarte deschis pentru rândurile pare, pentru ușurința citirii */
+}
+
+table a {
+    color: #3FB6A8; /* Link-uri cu aceeași culoare ca butoanele */
+    text-decoration: none; /* Fără subliniere */
+}
+
+table a:hover {
+    text-decoration: underline; /* Subliniază la hover pentru a indica că sunt clicabile */
+}
+
+.admin-button {
+    font-family: "Nunito", sans-serif; /* Folosind unul dintre fonturile specificate */
+    background-color: #3FB6A8; /* Culoarea principala din gradientul de fundal */
+    color: #FFFFFF; /* Pentru contrast */
+    padding: 10px 20px; /* Dimensiuni confortabile pentru un buton */
+    border: none; /* Fără bordură pentru un aspect modern */
+    border-radius: 5px; /* Colțuri rotunjite pentru a se potrivi cu stilul general */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* O umbră ușoară pentru adâncime */
+    transition: background-color 0.3s, transform 0.3s; /* Tranziții pentru interactivitate */
+    text-transform: uppercase; /* Consistență cu alte butoane */
+    font-weight: 900; /* Pentru a se potrivi cu greutatea fontului din import */
+    cursor: pointer; /* Pentru a indica faptul că este clicabil */
+    margin-bottom: 20px;
+}
+
+.admin-button:hover {
+    background-color: #7ED386; /* Schimbarea culorii pe hover pentru feedback vizual */
+    transform: scale(1.05); /* Ușoară mărire pentru efect de hover */
+}

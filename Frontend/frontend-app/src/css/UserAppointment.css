@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,900|Montserrat|Roboto");
+
+body {
+    background: linear-gradient(to right, #84fab0, #8fd3f4); 
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_user {
+    background: #F0F0F0;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+}
+
+.user_appointments {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.user_appointments h1 {
+    color: #4A90E2;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.user_appointments ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user_appointments li {
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #4A90E2;
+}
+
+.user_appointments li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.user_appointments div {
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.doctor_appointments_user {
+    background-color: #E6F7FF;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-top: 3px dashed #B0D4F1;
+}
+
+.doctor_appointments_user h2 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.doctor_appointments_user div {
+    font-weight: normal;
+    color: #555555;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.appointment_input_user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.appointment_input_user input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.appointment_input_user input:focus {
+    border-color: #4A90E2;
+}
+
+.appointment_input_user button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appointment_input_user button:hover {
+    background-color: #45a049;
+}
+
+.squaredOne {
+    width: 28px;
+    height: 20px;
+    position: relative;
+    margin: 2px auto;
+    background: #fcfff4;
+    background: linear-gradient(to top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    margin-left: 20px;
+    /* margin-bottom: -100px; */
+}
+
+.squaredOne label {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    cursor: pointer;
+    background: linear-gradient(to top, #222 0%, #45484d 100%);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+}
+
+.squaredOne label:after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: linear-gradient(to top, #00e64d 0%, #009933 100%); 
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.squaredOne label:hover::after {
+    opacity: 0.3;
+}
+
+.squaredOne input[type=checkbox] {
+    visibility: hidden;
+}
+
+.squaredOne input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+
+.horizontal-layout {
+    display: flex;
+    flex-direction: row-reverse;         
+    justify-content: center; 
+    align-items: center;    
+    /* gap: 10px;               */
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+@media (max-width: 768px) {
+    .container_user {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .appointment_input_user {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .appointment_input_user input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+

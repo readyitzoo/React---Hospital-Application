@@ -1,0 +1,77 @@
+.registerBody1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #86EE60;
+}
+
+.registerWrapper1{
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top:  10%;
+    bottom: 10%;
+    display: flex;
+    flex-direction: row; 
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}
+
+.filler1{
+    /* background-color: blue; */
+    height: 70%;
+    width: 50%;
+    padding-top: 20%;
+}
+
+.registerForm1{
+    background-color: #F4F7ED;
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    border-top-left-radius: 50px; 
+    border-bottom-left-radius: 50px;
+}
+
+.registerForm1 input{
+    width: 60%;
+    height: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border-radius: 4px;
+    padding: 3px;
+    padding-left: 10px;
+    border-color: lightyellow;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.submitButton1{
+    margin-top:50px;
+    width: 15%;
+    height: 5%;
+    margin-left: auto;
+    margin-right: 15%;
+    border-radius: 15px;
+    background-color: #86EE60;
+    font-weight: bold;
+}
+
+.registerHeader1{
+    font-size: 30px;
+}
+
+.joinHeader1{
+    font-size: 40px;
+}
+
+.filler h2,.filler h3{
+    color: white; 
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+}
